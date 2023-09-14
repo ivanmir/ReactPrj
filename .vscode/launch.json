@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Run ReactPrj-app",
+      "name": "Run ReactPrj",
       "type": "node",
       "request": "launch",
       "program": "${workspaceFolder}/node_modules/@sap/html5-repo-mock/index.js",
