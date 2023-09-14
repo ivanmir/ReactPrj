@@ -5,7 +5,7 @@
       "label": "Run ReactPrj",
       "type": "shell",
       "dependsOn": "Build ReactPrj",
-      "command": "Set \"_tempvar=\" && if not exist ${workspaceFolder}/node_modules/@sap/html5-repo-mock/index.js Set \"_tempvar=1\" && if not exist ${workspaceFolder}/node_modules/@sap/approuter/approuter.js Set \"_tempvar=1\" && if %_tempvar% EQU 1 (npm i @sap/approuter && npm i @sap/html5-repo-mock)",
+      "command": "if not exist ${workspaceFolder}/node_modules ( npm i )",
       "options": {
         "cwd": "${workspaceFolder}"
       }

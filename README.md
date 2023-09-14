@@ -9,6 +9,16 @@
 # npm run watch
 ```
 3. Run the vscode launch configuration
+```
+Open the 'RUN' menu on VSCODE
+Select teh run configuration named "Run ReactPrj"
+Click on the play button
+--> You might see npm installing files automatically or building the project if required
+--> You should see lines on the debug console related to html5-rep-mock starting up
+```
+
+4. Open the browser at the root of the App Router (don't use the addresses indicated on the debug output):
+http://localhost:6004
 
 Notes:
 =======
