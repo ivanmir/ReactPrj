@@ -5,7 +5,7 @@
       "label": "Run ReactPrj",
       "type": "shell",
       "dependsOn": "Build ReactPrj",
-      "command": "if [ ! -f ${workspaceFolder}/node_modules/@sap/html5-repo-mock/index.js ] || [ ! -f ${workspaceFolder}/node_modules/@sap/approuter/approuter.js ]; then npm i @sap/approuter && npm i @sap/html5-repo-mock; fi",
+      "command": "Set \"_tempvar=\" && if not exist ${workspaceFolder}/node_modules/@sap/html5-repo-mock/index.js Set \"_tempvar=1\" && if not exist ${workspaceFolder}/node_modules/@sap/approuter/approuter.js Set \"_tempvar=1\" && if %_tempvar% EQU 1 (npm i @sap/approuter && npm i @sap/html5-repo-mock)",
       "options": {
         "cwd": "${workspaceFolder}"
       }
@@ -13,7 +13,7 @@
     {
       "label": "Build ReactPrj",
       "type": "shell",
-      "command": "if [ ! -d ${workspaceFolder}/app/build ]; then npm run build-app; fi",
+      "command": "if not exist ${workspaceFolder}/app/build ( npm run build-app )",
       "options": {
         "cwd": "${workspaceFolder}"
       }
