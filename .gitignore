@@ -1,5 +1,9 @@
 /mta_archives
 /node_modules
 /resources
-/app/build
-/app/node_modules
+**node_modules
+**build
+/build/
+/build
+build/
+build
