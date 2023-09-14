@@ -1,0 +1,12 @@
+{
+  "name": "project",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@sap/approuter": "14.2.1",
+    "@sap/html5-repo-mock": "2.1.5"
+  },
+  "scripts": {
+    "build-app": "cd app && if [ ! -d ${workspaceFolder}/ReactPrj/app/node_modules/react-scripts ] && [ ! -d ${workspaceFolder}/ReactPrj/node_modules/react-scripts ]; then npm i; fi && npm run build"
+  }
+}

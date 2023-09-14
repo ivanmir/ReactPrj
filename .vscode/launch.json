@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run ReactPrj-app",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/@sap/html5-repo-mock/index.js",
+      "args": [
+        "--standalone",
+        "/app/index.html"
+      ],
+      "cwd": "${workspaceFolder}/app/build",
+      "env": {
+        "PORT": "6004",
+        "run.config": "{\"handlerId\":\"html5_run_config_handler_id\",\"runnableId\":\"/home/user/projects/ReactPrj/app\"}"
+      },
+      "envFile": "${workspaceFolder}/app/.env1",
+      "preLaunchTask": "Run ReactPrj"
+    }
+  ]
+}
